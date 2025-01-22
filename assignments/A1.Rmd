@@ -1,0 +1,29 @@
+---
+title: "Homework 1"
+author: "Kaixi Wang"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+---
+
+```{r}
+library(data.table)
+library(tidyverse)
+library(leaflet)
+library(here)
+```
+
+```{r import_data}
+met <- data.table::fread(here("assignments", "data", "Met All.gz"))
+```
+
+```{r exploration}
+met %>% glimpse()
+
+met %>%
+  summary()
+```
+
+
+
+
+
+
